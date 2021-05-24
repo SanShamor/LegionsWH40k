@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		363AB37C265B90AF008EB666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB37B265B90AF008EB666 /* AppDelegate.swift */; };
 		363AB37E265B90AF008EB666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB37D265B90AF008EB666 /* SceneDelegate.swift */; };
-		363AB380265B90AF008EB666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB37F265B90AF008EB666 /* ViewController.swift */; };
 		363AB383265B90B0008EB666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AB381265B90B0008EB666 /* Main.storyboard */; };
 		363AB385265B90B1008EB666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363AB384265B90B1008EB666 /* Assets.xcassets */; };
 		363AB388265B90B1008EB666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AB386265B90B1008EB666 /* LaunchScreen.storyboard */; };
+		363AB390265B9185008EB666 /* LegionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB38F265B9185008EB666 /* LegionsList.swift */; };
+		363AB392265B9275008EB666 /* Legion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB391265B9275008EB666 /* Legion.swift */; };
+		363AB394265BA22D008EB666 /* LegionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB393265BA22D008EB666 /* LegionDetailsViewController.swift */; };
+		363AB396265BB14D008EB666 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB395265BB14D008EB666 /* DataManager.swift */; };
+		363AB398265BC303008EB666 /* PrimarchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB397265BC303008EB666 /* PrimarchDetailViewController.swift */; };
+		363AB39A265BC9D2008EB666 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB399265BC9D2008EB666 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		363AB378265B90AF008EB666 /* Legions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AB37B265B90AF008EB666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363AB37D265B90AF008EB666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		363AB37F265B90AF008EB666 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		363AB382265B90B0008EB666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		363AB384265B90B1008EB666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		363AB387265B90B1008EB666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		363AB389265B90B1008EB666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363AB38F265B9185008EB666 /* LegionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegionsList.swift; sourceTree = "<group>"; };
+		363AB391265B9275008EB666 /* Legion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legion.swift; sourceTree = "<group>"; };
+		363AB393265BA22D008EB666 /* LegionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegionDetailsViewController.swift; sourceTree = "<group>"; };
+		363AB395265BB14D008EB666 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		363AB397265BC303008EB666 /* PrimarchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarchDetailViewController.swift; sourceTree = "<group>"; };
+		363AB399265BC9D2008EB666 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,14 @@
 		363AB37A265B90AF008EB666 /* Legions */ = {
 			isa = PBXGroup;
 			children = (
+				363AB38F265B9185008EB666 /* LegionsList.swift */,
+				363AB399265BC9D2008EB666 /* TabBarViewController.swift */,
+				363AB393265BA22D008EB666 /* LegionDetailsViewController.swift */,
+				363AB397265BC303008EB666 /* PrimarchDetailViewController.swift */,
+				363AB391265B9275008EB666 /* Legion.swift */,
+				363AB395265BB14D008EB666 /* DataManager.swift */,
 				363AB37B265B90AF008EB666 /* AppDelegate.swift */,
 				363AB37D265B90AF008EB666 /* SceneDelegate.swift */,
-				363AB37F265B90AF008EB666 /* ViewController.swift */,
 				363AB381265B90B0008EB666 /* Main.storyboard */,
 				363AB384265B90B1008EB666 /* Assets.xcassets */,
 				363AB386265B90B1008EB666 /* LaunchScreen.storyboard */,
@@ -137,9 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363AB380265B90AF008EB666 /* ViewController.swift in Sources */,
+				363AB39A265BC9D2008EB666 /* TabBarViewController.swift in Sources */,
+				363AB394265BA22D008EB666 /* LegionDetailsViewController.swift in Sources */,
+				363AB396265BB14D008EB666 /* DataManager.swift in Sources */,
 				363AB37C265B90AF008EB666 /* AppDelegate.swift in Sources */,
+				363AB392265B9275008EB666 /* Legion.swift in Sources */,
+				363AB398265BC303008EB666 /* PrimarchDetailViewController.swift in Sources */,
 				363AB37E265B90AF008EB666 /* SceneDelegate.swift in Sources */,
+				363AB390265B9185008EB666 /* LegionsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Swiftbook.Legions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Swiftbook.Legions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
