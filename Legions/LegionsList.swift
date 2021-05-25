@@ -31,6 +31,7 @@ class LegionsList: UITableViewController {
         content.secondaryText = legion.number
         content.image = UIImage(named: legion.number)
         content.imageProperties.cornerRadius = tableView.rowHeight / 3
+
         cell.contentConfiguration = content
         
         return cell

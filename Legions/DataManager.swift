@@ -36,12 +36,12 @@ class DataManager {
     ]
     
     let statusPosition = [
-        "Loyal: K.O.", "HERESY\nDemon-Prince of Slaanesh","HERESY: N/A",
-        "Loyal: N/A", "Loyal: Lost Signal", "Loyal: K.O.",
-        "HERESY: <Target_terminated>", "Loyal: K.O.", "Loyal: K.O.",
-        "HERESY\nDemon-Prince of Kchorne", "Loyal: Guard", "HERESY\nDemon-Prince of Nurgle",
-        "HERESY\nDemon-Prince of Tzeentch", "HERESY: <Target_terminated>", "HERESY: N/A",
-        "Loyal: Lost Signal", "Loyal: N/A", "HERESY: <Target_terminated>?"
+        "Loyal – K.O.", "HERESY\nDemon-Prince of Slaanesh","HERESY – N/A",
+        "Loyal – N/A", "Loyal – Lost Signal", "Loyal – K.O.",
+        "HERESY – <Target_terminated>", "Loyal – K.O.", "Loyal – K.O.",
+        "HERESY\nDemon-Prince of Kchorne", "Loyal – Guard", "HERESY\nDemon-Prince of Nurgle",
+        "HERESY\nDemon-Prince of Tzeentch", "HERESY – <Target_terminated>", "HERESY – N/A",
+        "Loyal – Lost Signal", "Loyal – N/A", "HERESY – <Target_terminated>?"
     ]
     
     let planetList = [
@@ -50,7 +50,7 @@ class DataManager {
         "Gaal", "Medusa", "Nuceria\n<Destroyed>",
         "Macragge\nUltramar - Segmentum Ultima", "Barbarus\n<Exterminatus_Confirmed>", "Prosperro\n<Destroyed>",
         "Chthonia\n<Exterminatus_Confirmed>", "Monarchy\n<Exterminatus_Confirmed>", "Nocturne",
-        "Lucaes", "---"
+        "Lucaes", "<No_Information>"
     ]
     
     let urls = [
