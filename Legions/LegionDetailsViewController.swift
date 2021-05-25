@@ -8,23 +8,37 @@
 import UIKit
 
 class LegionDetailsViewController: UIViewController {
-
+    
     var legion: Legion!
     
     @IBOutlet weak var emblemImageView: UIImageView!
     @IBOutlet weak var armorImageView: UIImageView!
     @IBOutlet weak var primarchLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        
         emblemImageView.image = UIImage(named: legion.number)
-        armorImageView.image = UIImage(named: legion.name)
+        getPicture()
         
         primarchLabel.text = "Primarch:\n\(legion.primarch.name)"
     }
     
+    private func getPicture() {
+        guard let url = URL(string: legion.urlPhoto ?? "") else { return }
+        
+        DispatchQueue.global().async {
+            guard let imageData = try? Data(contentsOf: url) else { return }
+            
+            DispatchQueue.main.async {
+                self.armorImageView.image = UIImage(data: imageData)
+                self.activityIndicator.stopAnimating()
+            }
+            
+        }
+    }
     
-
-    
-
 }

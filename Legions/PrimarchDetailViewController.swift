@@ -10,13 +10,21 @@ import UIKit
 class PrimarchDetailViewController: UIViewController {
 
     @IBOutlet weak var primarchImage: UIImageView!
+    @IBOutlet weak var primarchNameLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var planetLabel: UILabel!
     
     var primarch: Primarch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        primarchImage.image = UIImage(named: primarch.name)
+        primarchInfo()
     }
     
-
+    private func primarchInfo() {
+        primarchNameLabel.text = primarch.name
+        statusLabel.text = "status: \(primarch.status)"
+        planetLabel.text = "planet: \(primarch.planet)"
+        primarchImage.image = UIImage(named: primarch.name)
+    }
 }

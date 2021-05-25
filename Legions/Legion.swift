@@ -8,6 +8,7 @@
 struct Legion {
     let name: String
     let number: String
+    let urlPhoto: String?
     let primarch: Primarch
 }
 
@@ -24,6 +25,7 @@ extension Legion {
         
         let legionNames = DataManager.shared.legionNames
         let numbers = DataManager.shared.numbers
+        let urls = DataManager.shared.urls
         let primarchNames = DataManager.shared.primarchNames
         
         let iterationCount = min(legionNames.count, numbers.count, primarchNames.count)
@@ -32,6 +34,7 @@ extension Legion {
             let legion = Legion(
                 name: legionNames[index],
                 number: numbers[index],
+                urlPhoto: urls[index],
                 primarch: Primarch.getPrimarchList()[index]
             )
             

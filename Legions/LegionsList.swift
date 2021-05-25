@@ -46,8 +46,6 @@ class LegionsList: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let legionDetailsVC = segue.destination as? TabBarViewController else { return }
-//        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//        let track = trackList[indexPath.row]
         legionDetailsVC.legion = sender as? Legion
     }
 
