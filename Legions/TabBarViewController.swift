@@ -16,8 +16,8 @@ class TabBarViewController: UITabBarController {
         setupViewControllers(with: legion)
     }
     private func setupViewControllers(with legion: Legion) {
-        let legionDetailVC = viewControllers?.first as! LegionDetailsViewController
-        let primarchDetailVC = viewControllers?.last as! PrimarchDetailViewController
+        let legionDetailVC = viewControllers?.first as! LegionDetail
+        let primarchDetailVC = viewControllers?.last as! PrimarchDetail
         
         legionDetailVC.legion = legion
         primarchDetailVC.primarch = legion.primarch

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LegionDetailsViewController: UIViewController {
+class LegionDetail: UIViewController {
     
     var legion: Legion!
     

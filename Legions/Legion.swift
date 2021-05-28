@@ -18,6 +18,11 @@ struct Primarch {
     let planet: String
 }
 
+struct ChaosGod {
+    let discription: String
+    let urlPhoto: String?
+}
+
 extension Legion {
     static func getLegionList() -> [Legion] {
         
@@ -25,7 +30,7 @@ extension Legion {
         
         let legionNames = DataManager.shared.legionNames
         let numbers = DataManager.shared.numbers
-        let urls = DataManager.shared.urls
+        let urls = DataManager.shared.urlsAstartes
         let primarchNames = DataManager.shared.primarchNames
         
         let iterationCount = min(legionNames.count, numbers.count, primarchNames.count)
@@ -68,3 +73,25 @@ extension Primarch {
             return primarchs
         }
     }
+
+extension ChaosGod {
+    static func getGodsList() -> [ChaosGod] {
+        var gods: [ChaosGod] = []
+        
+        let godDiscriptons = DataManager.shared.chaosGods
+        let urls = DataManager.shared.urlsChaos
+        
+        let iterationCount = min(godDiscriptons.count, urls.count)
+        
+        for index in 0..<iterationCount {
+            let god = ChaosGod(
+                discription: godDiscriptons[index],
+                urlPhoto: urls[index]
+            )
+            
+            gods.append(god)
+        }
+        
+        return gods
+    }
+}

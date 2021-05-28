@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PrimarchDetailViewController: UIViewController {
+class PrimarchDetail: UIViewController {
 
     @IBOutlet weak var primarchImage: UIImageView!
     @IBOutlet weak var primarchNameLabel: UILabel!
