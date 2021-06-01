@@ -62,9 +62,8 @@ class ChaosViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func galleryButtonPressed(_ sender: UIButton) {
-        print("1")
+    @IBAction func galleryBarButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "gallerySegue", sender: nil)
     }
     
     

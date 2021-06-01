@@ -14,7 +14,7 @@ enum UserActions: String, CaseIterable {
     case exampleThree = "Test"
 }
 
-class CollectionView: UICollectionViewController {
+class MainCollectionView: UICollectionViewController {
     
     let userActions = UserActions.allCases
     
@@ -24,7 +24,7 @@ class CollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCell
         cell.userActionLabel.text = userActions[indexPath.item].rawValue
         return cell
         
@@ -47,7 +47,7 @@ class CollectionView: UICollectionViewController {
     
 }
 }
-extension CollectionView: UICollectionViewDelegateFlowLayout {
+extension MainCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 60, height: 60)
     }

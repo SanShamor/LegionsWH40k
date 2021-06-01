@@ -22,5 +22,9 @@ class TabBarViewController: UITabBarController {
         legionDetailVC.legion = legion
         primarchDetailVC.primarch = legion.primarch
     }
-
+   
+    @IBAction func galleryBarButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "gallerySegue", sender: nil)
+    }
+    
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewCell: UICollectionViewCell {
+class MainCell: UICollectionViewCell {
     
     @IBOutlet weak var userActionLabel: UILabel!
 }
