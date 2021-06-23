@@ -310,6 +310,28 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.57196925840000001" green="0.16646997199999999" blue="0.2234221374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygu-t8-ArJ">
+                                <rect key="frame" x="254" y="494" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="2YN-Zr-apk"/>
+                                    <constraint firstAttribute="width" constant="50" id="v7G-1U-mPc"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="More">
+                                            <attributes>
+                                                <color key="NSColor" red="0.85548644704917043" green="0.85548644704917043" blue="0.85548644704917043" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="14" name="Rockwell-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="moreButtonPressed" destination="5ul-5m-3zA" eventType="touchUpInside" id="8Qk-MM-7fy"/>
+                                    <action selector="moreButtonPressed:" destination="h3f-5B-zlW" eventType="touchUpInside" id="VlP-Je-xIH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MXS-Du-jzr"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -322,10 +344,12 @@
                             <constraint firstItem="MXS-Du-jzr" firstAttribute="trailing" secondItem="qG7-gD-bQR" secondAttribute="trailing" constant="16" id="Pza-Sp-RJJ"/>
                             <constraint firstItem="qG7-gD-bQR" firstAttribute="leading" secondItem="MXS-Du-jzr" secondAttribute="leading" constant="16" id="QIT-gD-wdd"/>
                             <constraint firstItem="Ipl-0a-09y" firstAttribute="top" secondItem="whb-on-jdY" secondAttribute="bottom" constant="5" id="RtG-Tf-hDZ"/>
+                            <constraint firstItem="MXS-Du-jzr" firstAttribute="trailing" secondItem="Ygu-t8-ArJ" secondAttribute="trailing" constant="16" id="T3w-dv-d2b"/>
                             <constraint firstItem="MXS-Du-jzr" firstAttribute="bottom" secondItem="DR1-kU-EXl" secondAttribute="bottom" constant="100" id="aTo-1S-WFw"/>
                             <constraint firstItem="MXS-Du-jzr" firstAttribute="trailing" secondItem="Ipl-0a-09y" secondAttribute="trailing" constant="16" id="g8c-Jz-Dvm"/>
                             <constraint firstItem="qG7-gD-bQR" firstAttribute="top" secondItem="MXS-Du-jzr" secondAttribute="top" constant="5" id="hbb-Ko-7j6"/>
                             <constraint firstItem="DR1-kU-EXl" firstAttribute="top" secondItem="qG7-gD-bQR" secondAttribute="bottom" constant="2" id="rIj-Ie-j43"/>
+                            <constraint firstItem="Ygu-t8-ArJ" firstAttribute="bottom" secondItem="MXS-Du-jzr" secondAttribute="bottom" id="sbC-KP-TOI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Primarch" image="person.crop.square" catalog="system" id="6ic-Ow-ZEE"/>
@@ -334,11 +358,43 @@
                         <outlet property="primarchImage" destination="qG7-gD-bQR" id="vcc-Fz-93z"/>
                         <outlet property="primarchNameLabel" destination="DR1-kU-EXl" id="FF0-ex-NTf"/>
                         <outlet property="statusLabel" destination="whb-on-jdY" id="brP-dk-vaT"/>
+                        <segue destination="GrX-CE-1aD" kind="show" identifier="primarchWebSegue" id="UFo-I5-bup"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZQ-2X-zfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="h3f-5B-zlW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1620" y="1143"/>
+        </scene>
+        <!--Primarch Web-->
+        <scene sceneID="KRV-a1-jNT">
+            <objects>
+                <viewController id="GrX-CE-1aD" customClass="PrimarchWeb" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q74-b2-gLY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PB3-ZB-SEm">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RrB-LM-nMP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="3IG-IO-dBO"/>
+                    <connections>
+                        <outlet property="webView" destination="PB3-ZB-SEm" id="gSF-2r-AfH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kd-Zo-rxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="1142.9577464788733"/>
         </scene>
         <!--Main-->
         <scene sceneID="CvX-Ge-xyE">
@@ -405,11 +461,47 @@
                     <connections>
                         <segue destination="FVN-QN-tvP" kind="show" identifier="astartesSegue" id="aQw-JB-306"/>
                         <segue destination="tLu-AG-Cv9" kind="show" identifier="chaosSegue" id="JVd-4O-w5V"/>
+                        <segue destination="d1t-YT-4hh" kind="show" identifier="mechanicusSegue" id="bbn-30-lS6"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEM-2G-BlJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-488" y="-34"/>
+        </scene>
+        <!--Mechanicus View Controller-->
+        <scene sceneID="E9x-EX-hIx">
+            <objects>
+                <viewController id="d1t-YT-4hh" customClass="MechanicusViewController" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2F-Rp-A6C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keA-0x-3mk">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qme-cD-0qa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="keA-0x-3mk" firstAttribute="trailing" secondItem="qme-cD-0qa" secondAttribute="trailing" id="Uq4-NW-Esr"/>
+                            <constraint firstItem="keA-0x-3mk" firstAttribute="leading" secondItem="qme-cD-0qa" secondAttribute="leading" id="eLa-QC-lNZ"/>
+                            <constraint firstItem="keA-0x-3mk" firstAttribute="top" secondItem="qme-cD-0qa" secondAttribute="top" id="ldX-3W-bgU"/>
+                            <constraint firstItem="keA-0x-3mk" firstAttribute="bottom" secondItem="qme-cD-0qa" secondAttribute="bottom" id="m9N-52-pqb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="pED-PF-mbi"/>
+                    <connections>
+                        <outlet property="webView" destination="keA-0x-3mk" id="XSh-ce-dlE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Md-oD-XTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="-676.05633802816897"/>
         </scene>
         <!--Chaos-->
         <scene sceneID="1Q7-aj-N4o">

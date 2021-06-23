@@ -26,7 +26,7 @@ class LegionDetail: UIViewController {
         
         primarchLabel.text = "Primarch:\n\(legion.primarch.name)"
     }
-    
+
     private func getPicture() {
         guard let url = URL(string: legion.urlPhoto ?? "") else { return }
         

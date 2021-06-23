@@ -21,6 +21,8 @@
 		363AB39A265BC9D2008EB666 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB399265BC9D2008EB666 /* TabBarViewController.swift */; };
 		36543F702664E2BF00DB78AD /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36543F6F2664E2BF00DB78AD /* GalleryCollectionView.swift */; };
 		36543F722664E98700DB78AD /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36543F712664E98700DB78AD /* GalleryCell.swift */; };
+		3664A0CE266E010400DBE249 /* MechanicusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664A0CD266E010400DBE249 /* MechanicusViewController.swift */; };
+		3664A0D0266E047100DBE249 /* PrimarchWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664A0CF266E047100DBE249 /* PrimarchWeb.swift */; };
 		367CFF5F2661204A005F731D /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF5E2661204A005F731D /* MainCollectionView.swift */; };
 		367CFF6126612067005F731D /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6026612067005F731D /* MainCell.swift */; };
 		367CFF6326615A6A005F731D /* ChaosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6226615A6A005F731D /* ChaosViewController.swift */; };
@@ -43,6 +45,8 @@
 		363AB399265BC9D2008EB666 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		36543F6F2664E2BF00DB78AD /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		36543F712664E98700DB78AD /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		3664A0CD266E010400DBE249 /* MechanicusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicusViewController.swift; sourceTree = "<group>"; };
+		3664A0CF266E047100DBE249 /* PrimarchWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarchWeb.swift; sourceTree = "<group>"; };
 		367CFF5E2661204A005F731D /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
 		367CFF6026612067005F731D /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		367CFF6226615A6A005F731D /* ChaosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosViewController.swift; sourceTree = "<group>"; };
@@ -78,26 +82,76 @@
 		363AB37A265B90AF008EB666 /* Legions */ = {
 			isa = PBXGroup;
 			children = (
+				364A1DCE268339AA000EA704 /* Models */,
+				364A1DD1268339E8000EA704 /* ViewControllers */,
+				364A1DD0268339CB000EA704 /* Services */,
+				364A1DCF268339B5000EA704 /* StoryBoards */,
+				364A1DD326833AE3000EA704 /* Resources */,
+				364A1DD226833ADB000EA704 /* App */,
+			);
+			path = Legions;
+			sourceTree = "<group>";
+		};
+		364A1DCE268339AA000EA704 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				363AB391265B9275008EB666 /* Legion.swift */,
-				363AB395265BB14D008EB666 /* DataManager.swift */,
-				363AB399265BC9D2008EB666 /* TabBarViewController.swift */,
-				363AB37B265B90AF008EB666 /* AppDelegate.swift */,
-				363AB37D265B90AF008EB666 /* SceneDelegate.swift */,
-				363AB384265B90B1008EB666 /* Assets.xcassets */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		364A1DCF268339B5000EA704 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
 				363AB386265B90B1008EB666 /* LaunchScreen.storyboard */,
-				363AB389265B90B1008EB666 /* Info.plist */,
 				363AB381265B90B0008EB666 /* Main.storyboard */,
-				367CFF5E2661204A005F731D /* MainCollectionView.swift */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		364A1DD0268339CB000EA704 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				363AB395265BB14D008EB666 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		364A1DD1268339E8000EA704 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				367CFF6026612067005F731D /* MainCell.swift */,
 				363AB38F265B9185008EB666 /* LegionsList.swift */,
 				363AB393265BA22D008EB666 /* LegionDetail.swift */,
 				363AB397265BC303008EB666 /* PrimarchDetail.swift */,
+				3664A0CF266E047100DBE249 /* PrimarchWeb.swift */,
+				36543F712664E98700DB78AD /* GalleryCell.swift */,
+				363AB399265BC9D2008EB666 /* TabBarViewController.swift */,
+				367CFF5E2661204A005F731D /* MainCollectionView.swift */,
+				3664A0CD266E010400DBE249 /* MechanicusViewController.swift */,
 				367CFF6226615A6A005F731D /* ChaosViewController.swift */,
 				36543F6F2664E2BF00DB78AD /* GalleryCollectionView.swift */,
-				36543F712664E98700DB78AD /* GalleryCell.swift */,
 				36120C472666383F00E45AFA /* PhotoDetailViewController.swift */,
 			);
-			path = Legions;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		364A1DD226833ADB000EA704 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				363AB37B265B90AF008EB666 /* AppDelegate.swift */,
+				363AB37D265B90AF008EB666 /* SceneDelegate.swift */,
+				363AB389265B90B1008EB666 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		364A1DD326833AE3000EA704 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				363AB384265B90B1008EB666 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3664A0D0266E047100DBE249 /* PrimarchWeb.swift in Sources */,
 				367CFF5F2661204A005F731D /* MainCollectionView.swift in Sources */,
 				363AB39A265BC9D2008EB666 /* TabBarViewController.swift in Sources */,
 				363AB394265BA22D008EB666 /* LegionDetail.swift in Sources */,
@@ -177,6 +232,7 @@
 				363AB396265BB14D008EB666 /* DataManager.swift in Sources */,
 				367CFF6126612067005F731D /* MainCell.swift in Sources */,
 				363AB37C265B90AF008EB666 /* AppDelegate.swift in Sources */,
+				3664A0CE266E010400DBE249 /* MechanicusViewController.swift in Sources */,
 				363AB392265B9275008EB666 /* Legion.swift in Sources */,
 				363AB398265BC303008EB666 /* PrimarchDetail.swift in Sources */,
 				367CFF6326615A6A005F731D /* ChaosViewController.swift in Sources */,
@@ -331,7 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Legions/Info.plist;
+				INFOPLIST_FILE = Legions/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Legions/Info.plist;
+				INFOPLIST_FILE = Legions/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

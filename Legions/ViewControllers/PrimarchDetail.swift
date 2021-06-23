@@ -20,7 +20,14 @@ class PrimarchDetail: UIViewController {
         super.viewDidLoad()
         primarchInfo()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let legionDetailsVC = segue.destination as? PrimarchWeb else { return }
+        legionDetailsVC.primarchData = sender as? Primarch
+    }
     
+    @IBAction func moreButtonPressed() {
+        performSegue(withIdentifier: "primarchWebSegue", sender: primarch)
+    }
     private func primarchInfo() {
         primarchNameLabel.text = primarch.name
         statusLabel.text = "status: \(primarch.status)"

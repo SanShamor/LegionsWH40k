@@ -24,6 +24,28 @@ class ChaosViewController: UIViewController {
         activityIndicator.hidesWhenStopped = true
     }
     
+    
+    @IBAction func choiseGodSegment(_ sender: UISegmentedControl) {
+        
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            reloadData(index: sender.selectedSegmentIndex)
+        case 1:
+            reloadData(index: sender.selectedSegmentIndex)
+            
+        case 2:
+            reloadData(index: sender.selectedSegmentIndex)
+            
+        default:
+            reloadData(index: sender.selectedSegmentIndex)
+            
+        }
+    }
+    
+    @IBAction func galleryBarButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "gallerySegue", sender: nil)
+    }
+    
     private func reloadData(index: Int) {
         let god = gods[index]
         
@@ -44,27 +66,4 @@ class ChaosViewController: UIViewController {
             
         }
     }
-    
-    @IBAction func choiseGodSegment(_ sender: UISegmentedControl) {
-        
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            reloadData(index: sender.selectedSegmentIndex)
-        case 1:
-            reloadData(index: sender.selectedSegmentIndex)
-
-        case 2:
-            reloadData(index: sender.selectedSegmentIndex)
-
-        default:
-            reloadData(index: sender.selectedSegmentIndex)
-
-        }
-    }
-    
-    @IBAction func galleryBarButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "gallerySegue", sender: nil)
-    }
-    
-    
 }

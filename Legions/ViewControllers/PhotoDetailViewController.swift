@@ -8,10 +8,10 @@
 import UIKit
 
 class PhotoDetailViewController: UIViewController {
-    
-    var image: UIImage?
 
     @IBOutlet weak var detailImageView: UIImageView!
+    
+    var image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
