@@ -8,24 +8,22 @@
 import UIKit
 
 
-class GalleryCollectionView: UICollectionViewController {
+class GalleryCV: UICollectionViewController {
     
     private var linksPhoto = DataManager.shared.urlsAstartes.shuffled() + DataManager.shared.urlsChaos.shuffled()
     
     private let itemsPerRow: CGFloat = 2
     private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-    
-    
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailPhoto" {
-            let photoVC = segue.destination as! PhotoDetailViewController
+            let photoVC = segue.destination as! PictureDetailVC
             let cell = sender as! GalleryCell
             photoVC.image = cell.imageGallery.image
         }
     }
     
     // MARK: UICollectionViewDataSource
-    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -50,10 +48,9 @@ class GalleryCollectionView: UICollectionViewController {
         return cell
     }
     
-    
 }
 
-extension GalleryCollectionView: UICollectionViewDelegateFlowLayout {
+extension GalleryCV: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         

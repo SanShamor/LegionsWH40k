@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36120C482666383F00E45AFA /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36120C472666383F00E45AFA /* PhotoDetailViewController.swift */; };
+		36120C482666383F00E45AFA /* PictureDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36120C472666383F00E45AFA /* PictureDetailVC.swift */; };
 		363AB37C265B90AF008EB666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB37B265B90AF008EB666 /* AppDelegate.swift */; };
 		363AB37E265B90AF008EB666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB37D265B90AF008EB666 /* SceneDelegate.swift */; };
 		363AB383265B90B0008EB666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AB381265B90B0008EB666 /* Main.storyboard */; };
 		363AB385265B90B1008EB666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363AB384265B90B1008EB666 /* Assets.xcassets */; };
 		363AB388265B90B1008EB666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AB386265B90B1008EB666 /* LaunchScreen.storyboard */; };
-		363AB390265B9185008EB666 /* LegionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB38F265B9185008EB666 /* LegionsList.swift */; };
+		363AB390265B9185008EB666 /* ListOfLegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB38F265B9185008EB666 /* ListOfLegions.swift */; };
 		363AB392265B9275008EB666 /* Legion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB391265B9275008EB666 /* Legion.swift */; };
-		363AB394265BA22D008EB666 /* LegionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB393265BA22D008EB666 /* LegionDetail.swift */; };
+		363AB394265BA22D008EB666 /* LegionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB393265BA22D008EB666 /* LegionDetailVC.swift */; };
 		363AB396265BB14D008EB666 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB395265BB14D008EB666 /* DataManager.swift */; };
-		363AB398265BC303008EB666 /* PrimarchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB397265BC303008EB666 /* PrimarchDetail.swift */; };
-		363AB39A265BC9D2008EB666 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB399265BC9D2008EB666 /* TabBarViewController.swift */; };
-		36543F702664E2BF00DB78AD /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36543F6F2664E2BF00DB78AD /* GalleryCollectionView.swift */; };
+		363AB398265BC303008EB666 /* PrimarchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB397265BC303008EB666 /* PrimarchDetailVC.swift */; };
+		363AB39A265BC9D2008EB666 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AB399265BC9D2008EB666 /* TabBarVC.swift */; };
+		36543F702664E2BF00DB78AD /* GalleryCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36543F6F2664E2BF00DB78AD /* GalleryCV.swift */; };
 		36543F722664E98700DB78AD /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36543F712664E98700DB78AD /* GalleryCell.swift */; };
-		3664A0CE266E010400DBE249 /* MechanicusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664A0CD266E010400DBE249 /* MechanicusViewController.swift */; };
-		3664A0D0266E047100DBE249 /* PrimarchWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664A0CF266E047100DBE249 /* PrimarchWeb.swift */; };
-		367CFF5F2661204A005F731D /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF5E2661204A005F731D /* MainCollectionView.swift */; };
-		367CFF6126612067005F731D /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6026612067005F731D /* MainCell.swift */; };
-		367CFF6326615A6A005F731D /* ChaosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6226615A6A005F731D /* ChaosViewController.swift */; };
+		3664A0CE266E010400DBE249 /* MechanicusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664A0CD266E010400DBE249 /* MechanicusVC.swift */; };
+		3664A0D0266E047100DBE249 /* PrimarchWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664A0CF266E047100DBE249 /* PrimarchWiki.swift */; };
+		367CFF5F2661204A005F731D /* MenuScreenCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF5E2661204A005F731D /* MenuScreenCV.swift */; };
+		367CFF6126612067005F731D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6026612067005F731D /* MenuCell.swift */; };
+		367CFF6326615A6A005F731D /* ChaosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6226615A6A005F731D /* ChaosVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36120C472666383F00E45AFA /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		36120C472666383F00E45AFA /* PictureDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDetailVC.swift; sourceTree = "<group>"; };
 		363AB378265B90AF008EB666 /* Legions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AB37B265B90AF008EB666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363AB37D265B90AF008EB666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,19 +37,19 @@
 		363AB384265B90B1008EB666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		363AB387265B90B1008EB666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		363AB389265B90B1008EB666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		363AB38F265B9185008EB666 /* LegionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegionsList.swift; sourceTree = "<group>"; };
+		363AB38F265B9185008EB666 /* ListOfLegions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfLegions.swift; sourceTree = "<group>"; };
 		363AB391265B9275008EB666 /* Legion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legion.swift; sourceTree = "<group>"; };
-		363AB393265BA22D008EB666 /* LegionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegionDetail.swift; sourceTree = "<group>"; };
+		363AB393265BA22D008EB666 /* LegionDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegionDetailVC.swift; sourceTree = "<group>"; };
 		363AB395265BB14D008EB666 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		363AB397265BC303008EB666 /* PrimarchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarchDetail.swift; sourceTree = "<group>"; };
-		363AB399265BC9D2008EB666 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		36543F6F2664E2BF00DB78AD /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		363AB397265BC303008EB666 /* PrimarchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarchDetailVC.swift; sourceTree = "<group>"; };
+		363AB399265BC9D2008EB666 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		36543F6F2664E2BF00DB78AD /* GalleryCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCV.swift; sourceTree = "<group>"; };
 		36543F712664E98700DB78AD /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
-		3664A0CD266E010400DBE249 /* MechanicusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicusViewController.swift; sourceTree = "<group>"; };
-		3664A0CF266E047100DBE249 /* PrimarchWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarchWeb.swift; sourceTree = "<group>"; };
-		367CFF5E2661204A005F731D /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
-		367CFF6026612067005F731D /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
-		367CFF6226615A6A005F731D /* ChaosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosViewController.swift; sourceTree = "<group>"; };
+		3664A0CD266E010400DBE249 /* MechanicusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicusVC.swift; sourceTree = "<group>"; };
+		3664A0CF266E047100DBE249 /* PrimarchWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarchWiki.swift; sourceTree = "<group>"; };
+		367CFF5E2661204A005F731D /* MenuScreenCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenCV.swift; sourceTree = "<group>"; };
+		367CFF6026612067005F731D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		367CFF6226615A6A005F731D /* ChaosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 		364A1DCF268339B5000EA704 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				363AB386265B90B1008EB666 /* LaunchScreen.storyboard */,
 				363AB381265B90B0008EB666 /* Main.storyboard */,
+				363AB386265B90B1008EB666 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -120,18 +120,18 @@
 		364A1DD1268339E8000EA704 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				367CFF6026612067005F731D /* MainCell.swift */,
-				363AB38F265B9185008EB666 /* LegionsList.swift */,
-				363AB393265BA22D008EB666 /* LegionDetail.swift */,
-				363AB397265BC303008EB666 /* PrimarchDetail.swift */,
-				3664A0CF266E047100DBE249 /* PrimarchWeb.swift */,
+				367CFF5E2661204A005F731D /* MenuScreenCV.swift */,
+				367CFF6026612067005F731D /* MenuCell.swift */,
+				3664A0CD266E010400DBE249 /* MechanicusVC.swift */,
+				367CFF6226615A6A005F731D /* ChaosVC.swift */,
+				363AB38F265B9185008EB666 /* ListOfLegions.swift */,
+				363AB399265BC9D2008EB666 /* TabBarVC.swift */,
+				363AB393265BA22D008EB666 /* LegionDetailVC.swift */,
+				363AB397265BC303008EB666 /* PrimarchDetailVC.swift */,
+				3664A0CF266E047100DBE249 /* PrimarchWiki.swift */,
+				36543F6F2664E2BF00DB78AD /* GalleryCV.swift */,
 				36543F712664E98700DB78AD /* GalleryCell.swift */,
-				363AB399265BC9D2008EB666 /* TabBarViewController.swift */,
-				367CFF5E2661204A005F731D /* MainCollectionView.swift */,
-				3664A0CD266E010400DBE249 /* MechanicusViewController.swift */,
-				367CFF6226615A6A005F731D /* ChaosViewController.swift */,
-				36543F6F2664E2BF00DB78AD /* GalleryCollectionView.swift */,
-				36120C472666383F00E45AFA /* PhotoDetailViewController.swift */,
+				36120C472666383F00E45AFA /* PictureDetailVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,22 +224,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3664A0D0266E047100DBE249 /* PrimarchWeb.swift in Sources */,
-				367CFF5F2661204A005F731D /* MainCollectionView.swift in Sources */,
-				363AB39A265BC9D2008EB666 /* TabBarViewController.swift in Sources */,
-				363AB394265BA22D008EB666 /* LegionDetail.swift in Sources */,
+				3664A0D0266E047100DBE249 /* PrimarchWiki.swift in Sources */,
+				367CFF5F2661204A005F731D /* MenuScreenCV.swift in Sources */,
+				363AB39A265BC9D2008EB666 /* TabBarVC.swift in Sources */,
+				363AB394265BA22D008EB666 /* LegionDetailVC.swift in Sources */,
 				36543F722664E98700DB78AD /* GalleryCell.swift in Sources */,
 				363AB396265BB14D008EB666 /* DataManager.swift in Sources */,
-				367CFF6126612067005F731D /* MainCell.swift in Sources */,
+				367CFF6126612067005F731D /* MenuCell.swift in Sources */,
 				363AB37C265B90AF008EB666 /* AppDelegate.swift in Sources */,
-				3664A0CE266E010400DBE249 /* MechanicusViewController.swift in Sources */,
+				3664A0CE266E010400DBE249 /* MechanicusVC.swift in Sources */,
 				363AB392265B9275008EB666 /* Legion.swift in Sources */,
-				363AB398265BC303008EB666 /* PrimarchDetail.swift in Sources */,
-				367CFF6326615A6A005F731D /* ChaosViewController.swift in Sources */,
-				36120C482666383F00E45AFA /* PhotoDetailViewController.swift in Sources */,
-				36543F702664E2BF00DB78AD /* GalleryCollectionView.swift in Sources */,
+				363AB398265BC303008EB666 /* PrimarchDetailVC.swift in Sources */,
+				367CFF6326615A6A005F731D /* ChaosVC.swift in Sources */,
+				36120C482666383F00E45AFA /* PictureDetailVC.swift in Sources */,
+				36543F702664E2BF00DB78AD /* GalleryCV.swift in Sources */,
 				363AB37E265B90AF008EB666 /* SceneDelegate.swift in Sources */,
-				363AB390265B9185008EB666 /* LegionsList.swift in Sources */,
+				363AB390265B9185008EB666 /* ListOfLegions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

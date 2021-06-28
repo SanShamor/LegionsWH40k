@@ -14,7 +14,7 @@ enum UserActions: String, CaseIterable {
     case exampleThree = "Test"
 }
 
-class MainCollectionView: UICollectionViewController {
+class MenuScreenCV: UICollectionViewController {
     
     private let userActions = UserActions.allCases
     
@@ -24,7 +24,7 @@ class MainCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenuCell
         cell.userActionLabel.text = userActions[indexPath.item].rawValue
         return cell
         
@@ -44,10 +44,11 @@ class MainCollectionView: UICollectionViewController {
         case .exampleThree:
             performSegue(withIdentifier: "redVC", sender: nil)
         }
-    
+        
+    }
 }
-}
-extension MainCollectionView: UICollectionViewDelegateFlowLayout {
+
+extension MenuScreenCV: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 60, height: 60)
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainCell: UICollectionViewCell {
+class MenuCell: UICollectionViewCell {
     
     @IBOutlet weak var userActionLabel: UILabel!
 }

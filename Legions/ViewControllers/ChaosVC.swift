@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChaosViewController: UIViewController {
+class ChaosVC: UIViewController {
     
     @IBOutlet weak var godsImageView: UIImageView!
     @IBOutlet weak var godsDiscriptionLabel: UILabel!
@@ -32,13 +32,10 @@ class ChaosViewController: UIViewController {
             reloadData(index: sender.selectedSegmentIndex)
         case 1:
             reloadData(index: sender.selectedSegmentIndex)
-            
         case 2:
             reloadData(index: sender.selectedSegmentIndex)
-            
         default:
             reloadData(index: sender.selectedSegmentIndex)
-            
         }
     }
     
@@ -49,7 +46,7 @@ class ChaosViewController: UIViewController {
     private func reloadData(index: Int) {
         let god = gods[index]
         
-        getPicture(url: god.urlPhoto)
+        getPicture(url: god.pictureLink)
         godsDiscriptionLabel.text = god.discription
     }
     

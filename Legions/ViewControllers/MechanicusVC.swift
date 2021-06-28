@@ -8,19 +8,20 @@
 import UIKit
 import WebKit
 
-class MechanicusViewController: UIViewController {
-
+class MechanicusVC: UIViewController {
+    
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let url = URL(string: "https://warhammer40k.fandom.com/wiki/Adeptus_Mechanicus")
-        let request = URLRequest(url: url!)
-        
-        webView.load(request)
-        
+        doRequestToWiki()
     }
     
-
+    private func doRequestToWiki() {
+        guard let url = URL(string: "https://warhammer40k.fandom.com/wiki/Adeptus_Mechanicus") else { return }
+        let request = URLRequest(url: url)
+        
+        webView.load(request)
+    }
+    
 }

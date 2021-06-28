@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcq-uS-CkX">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -13,21 +13,21 @@
         <!--Legiones Astartes-->
         <scene sceneID="kJm-pE-uYL">
             <objects>
-                <tableViewController id="FVN-QN-tvP" customClass="LegionsList" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="FVN-QN-tvP" customClass="ListOfLegions" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iun-Yp-xU2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="legionName" textLabel="ja6-DC-kzp" detailTextLabel="8LL-Td-8Ho" style="IBUITableViewCellStyleSubtitle" id="AYL-h2-09Y">
-                                <rect key="frame" x="0.0" y="24.5" width="320" height="45.5"/>
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="44.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AYL-h2-09Y" id="2ge-4N-swF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ja6-DC-kzp">
-                                            <rect key="frame" x="16" y="5.5" width="26.5" height="16"/>
+                                            <rect key="frame" x="20" y="5.666666666666667" width="26.666666666666668" height="15.666666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Title">
@@ -42,7 +42,7 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="8LL-Td-8Ho">
-                                            <rect key="frame" x="16" y="24" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="19.999999999999996" y="23.666666666666664" width="40.666666666666664" height="13.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                             <nil key="textColor"/>
@@ -66,14 +66,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTf-Y9-1f3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="412"/>
+            <point key="canvasLocation" x="345" y="363"/>
         </scene>
-        <!--Gallery Collection View-->
+        <!--GalleryCV-->
         <scene sceneID="uG3-Dw-8JB">
             <objects>
-                <collectionViewController id="qgZ-o7-9gT" customClass="GalleryCollectionView" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="qgZ-o7-9gT" customClass="GalleryCV" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qpV-PD-7jM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MEr-gE-aMe">
@@ -123,19 +123,19 @@
             </objects>
             <point key="canvasLocation" x="2261" y="-36"/>
         </scene>
-        <!--Photo Detail View Controller-->
+        <!--Picture DetailVC-->
         <scene sceneID="amS-rd-yKU">
             <objects>
-                <viewController id="D0S-bu-fEn" customClass="PhotoDetailViewController" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D0S-bu-fEn" customClass="PictureDetailVC" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xLr-aK-zLk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="siK-Kt-aNK">
-                                <rect key="frame" x="0.0" y="60" width="320" height="428"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="688"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buu-rr-CgI">
-                                <rect key="frame" x="95" y="497" width="130" height="26"/>
+                                <rect key="frame" x="142" y="757" width="130" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="hnJ-yC-D0Y"/>
                                 </constraints>
@@ -175,22 +175,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWJ-va-xjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3060" y="-36"/>
+            <point key="canvasLocation" x="3157" y="-36"/>
         </scene>
         <!--Legion-->
         <scene sceneID="j6w-xO-VZY">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="IfK-rD-okg" customClass="LegionDetail" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="IfK-rD-okg" customClass="LegionDetailVC" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tZf-Gw-z2m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d2g-ia-vOO">
-                                <rect key="frame" x="0.0" y="91" width="320" height="428"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="tintColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEv-cI-Bx9">
-                                <rect key="frame" x="16" y="459" width="187" height="40"/>
+                                <rect key="frame" x="16" y="753" width="281" height="40"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="XJu-F9-d1p"/>
@@ -208,14 +208,14 @@
                                 <color key="shadowColor" systemColor="systemGrayColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-Mz-BFF">
-                                <rect key="frame" x="219" y="344" width="85" height="160"/>
+                                <rect key="frame" x="313" y="638" width="85" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="YGn-cI-ICp"/>
                                     <constraint firstAttribute="width" constant="85" id="czS-Si-APc"/>
                                 </constraints>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OJx-yF-msc">
-                                <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
+                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
                                 <color key="color" red="0.51352314109999997" green="0.14945940129999999" blue="0.20059196560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </activityIndicatorView>
                         </subviews>
@@ -247,18 +247,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6v0-vw-i0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="1143"/>
+            <point key="canvasLocation" x="768" y="1124"/>
         </scene>
         <!--Primarch-->
         <scene sceneID="Jtd-lw-c10">
             <objects>
-                <viewController id="5ul-5m-3zA" customClass="PrimarchDetail" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5ul-5m-3zA" customClass="PrimarchDetailVC" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Wd-zW-3WU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whb-on-jdY">
-                                <rect key="frame" x="33" y="457" width="271" height="16"/>
+                                <rect key="frame" x="33" y="751" width="365" height="16"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Status:">
                                         <attributes>
@@ -271,7 +271,7 @@
                                 <color key="shadowColor" red="0.57196925841655921" green="0.16646997199491514" blue="0.22342213741004388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qG7-gD-bQR">
-                                <rect key="frame" x="16" y="97" width="288" height="298.5"/>
+                                <rect key="frame" x="16" y="146.66666666666663" width="382" height="543"/>
                                 <color key="tintColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -280,7 +280,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR1-kU-EXl">
-                                <rect key="frame" x="119" y="399" width="82" height="20"/>
+                                <rect key="frame" x="166" y="693" width="82" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="jDa-pe-Fcu"/>
                                 </constraints>
@@ -297,7 +297,7 @@
                                 <color key="shadowColor" red="0.51352314109999997" green="0.14945940129999999" blue="0.20059196560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipl-0a-09y">
-                                <rect key="frame" x="33" y="478" width="271" height="16"/>
+                                <rect key="frame" x="33" y="772" width="365" height="16"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Planet:">
                                         <attributes>
@@ -311,7 +311,7 @@
                                 <color key="shadowColor" red="0.57196925840000001" green="0.16646997199999999" blue="0.2234221374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygu-t8-ArJ">
-                                <rect key="frame" x="254" y="494" width="50" height="25"/>
+                                <rect key="frame" x="348" y="788" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="2YN-Zr-apk"/>
                                     <constraint firstAttribute="width" constant="50" id="v7G-1U-mPc"/>
@@ -364,19 +364,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZQ-2X-zfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="h3f-5B-zlW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1620" y="1143"/>
+            <point key="canvasLocation" x="1629" y="1123"/>
         </scene>
-        <!--Primarch Web-->
+        <!--Primarch Wiki-->
         <scene sceneID="KRV-a1-jNT">
             <objects>
-                <viewController id="GrX-CE-1aD" customClass="PrimarchWeb" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GrX-CE-1aD" customClass="PrimarchWiki" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q74-b2-gLY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PB3-ZB-SEm">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PB3-ZB-SEm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -386,6 +385,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RrB-LM-nMP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PB3-ZB-SEm" firstAttribute="leading" secondItem="RrB-LM-nMP" secondAttribute="leading" id="36x-29-E06"/>
+                            <constraint firstItem="RrB-LM-nMP" firstAttribute="bottom" secondItem="PB3-ZB-SEm" secondAttribute="bottom" id="DLU-np-4UD"/>
+                            <constraint firstItem="RrB-LM-nMP" firstAttribute="trailing" secondItem="PB3-ZB-SEm" secondAttribute="trailing" id="Hiq-lW-knW"/>
+                            <constraint firstItem="PB3-ZB-SEm" firstAttribute="top" secondItem="Q74-b2-gLY" secondAttribute="top" id="mPR-GU-cVa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="3IG-IO-dBO"/>
                     <connections>
@@ -394,14 +399,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kd-Zo-rxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2535" y="1142.9577464788733"/>
+            <point key="canvasLocation" x="2484" y="1123"/>
         </scene>
         <!--Main-->
         <scene sceneID="CvX-Ge-xyE">
             <objects>
-                <collectionViewController id="gxY-Go-Y09" customClass="MainCollectionView" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="gxY-Go-Y09" customClass="MenuScreenCV" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4fq-uZ-yMm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="40" minimumInteritemSpacing="40" id="dXG-pF-FVq">
@@ -411,15 +416,15 @@
                             <inset key="sectionInset" minX="0.0" minY="35" maxX="0.0" maxY="35"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="giR-XW-RsY" customClass="MainCell" customModule="Legions" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="35" width="320" height="80"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="giR-XW-RsY" customClass="MenuCell" customModule="Legions" customModuleProvider="target">
+                                <rect key="frame" x="47" y="35" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jOO-FJ-YE5">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOO-Hv-Auu">
-                                            <rect key="frame" x="105.5" y="26" width="109.5" height="28"/>
+                                            <rect key="frame" x="105.33333333333334" y="26" width="109.33333333333334" height="28"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="qjz-8O-baT"/>
                                             </constraints>
@@ -466,18 +471,18 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEM-2G-BlJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488" y="-34"/>
+            <point key="canvasLocation" x="-638" y="-36"/>
         </scene>
-        <!--Mechanicus View Controller-->
+        <!--MechanicusVC-->
         <scene sceneID="E9x-EX-hIx">
             <objects>
-                <viewController id="d1t-YT-4hh" customClass="MechanicusViewController" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d1t-YT-4hh" customClass="MechanicusVC" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V2F-Rp-A6C">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keA-0x-3mk">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -501,24 +506,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Md-oD-XTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="-676.05633802816897"/>
+            <point key="canvasLocation" x="345" y="-559"/>
         </scene>
         <!--Chaos-->
         <scene sceneID="1Q7-aj-N4o">
             <objects>
-                <viewController id="tLu-AG-Cv9" customClass="ChaosViewController" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tLu-AG-Cv9" customClass="ChaosVC" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g1S-gO-98d">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzv-Wf-78y">
-                                <rect key="frame" x="15" y="92" width="290" height="476"/>
+                                <rect key="frame" x="15" y="136" width="384" height="726"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="olG-hT-pLn">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="230.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="230.33333333333334"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7a4-if-ALp">
-                                                <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="200"/>
                                                 <color key="tintColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="J4c-Zx-rHr"/>
@@ -530,7 +535,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God's description here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSU-72-JRG">
-                                                <rect key="frame" x="0.0" y="210" width="290" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="210" width="384" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -549,7 +554,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="BAr-U7-qzb"/>
                             </scrollView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="166-8c-MfY">
-                                <rect key="frame" x="16" y="49" width="288" height="36"/>
+                                <rect key="frame" x="16" y="93" width="382" height="36"/>
                                 <color key="backgroundColor" red="0.56541623772106964" green="0.17066229833002458" blue="0.2340699005985386" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="lOb-ah-6UM"/>
@@ -565,7 +570,7 @@
                                 </connections>
                             </segmentedControl>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-lw-n4A">
-                                <rect key="frame" x="141.5" y="184" width="37" height="37"/>
+                                <rect key="frame" x="188.66666666666666" y="228" width="37" height="37"/>
                                 <color key="color" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </activityIndicatorView>
                         </subviews>
@@ -584,9 +589,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chaos" largeTitleDisplayMode="never" id="kVc-8i-ITY">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="095-we-0kb">
+                        <barButtonItem key="rightBarButtonItem" id="095-we-0kb">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="MPf-ro-uwr">
-                                <rect key="frame" x="229" y="7" width="75" height="30"/>
+                                <rect key="frame" x="319" y="7" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gallery40k">
                                     <color key="titleColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -610,17 +615,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnJ-e2-Rha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="-389"/>
+            <point key="canvasLocation" x="1193" y="-311"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="v4a-B3-Thm">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="U8g-cd-Snc" customClass="TabBarViewController" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="U8g-cd-Snc" customClass="TabBarVC" customModule="Legions" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="NFT-yN-wCq">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="tuh-hp-IlN">
+                        <barButtonItem key="rightBarButtonItem" id="tuh-hp-IlN">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tkg-jK-OIT">
-                                <rect key="frame" x="229" y="7" width="75" height="30"/>
+                                <rect key="frame" x="319" y="7" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gallery40k">
                                     <color key="titleColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -648,7 +653,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4G-ZU-ItS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="412"/>
+            <point key="canvasLocation" x="1193" y="363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="64e-lY-n0c">
@@ -656,7 +661,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dcq-uS-CkX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="62z-WX-Nzq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.43607770779999999" green="0.1269191355" blue="0.17034029740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

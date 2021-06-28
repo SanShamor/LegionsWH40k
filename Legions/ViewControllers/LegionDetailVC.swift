@@ -7,14 +7,14 @@
 
 import UIKit
 
-class LegionDetail: UIViewController {
-    
-    var legion: Legion!
-    
+class LegionDetailVC: UIViewController {
+        
     @IBOutlet weak var emblemImageView: UIImageView!
     @IBOutlet weak var armorImageView: UIImageView!
     @IBOutlet weak var primarchLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    var legion: Legion!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,9 @@ class LegionDetail: UIViewController {
         
         primarchLabel.text = "Primarch:\n\(legion.primarch.name)"
     }
-
+    
     private func getPicture() {
-        guard let url = URL(string: legion.urlPhoto ?? "") else { return }
+        guard let url = URL(string: legion.pictureLink ?? "") else { return }
         
         DispatchQueue.global().async {
             guard let imageData = try? Data(contentsOf: url) else { return }

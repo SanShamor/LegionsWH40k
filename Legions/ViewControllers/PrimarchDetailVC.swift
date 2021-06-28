@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PrimarchDetail: UIViewController {
+class PrimarchDetailVC: UIViewController {
 
     @IBOutlet weak var primarchImage: UIImageView!
     @IBOutlet weak var primarchNameLabel: UILabel!
@@ -21,7 +21,7 @@ class PrimarchDetail: UIViewController {
         primarchInfo()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let legionDetailsVC = segue.destination as? PrimarchWeb else { return }
+        guard let legionDetailsVC = segue.destination as? PrimarchWiki else { return }
         legionDetailsVC.primarchData = sender as? Primarch
     }
     

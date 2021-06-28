@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LegionsList: UITableViewController {
+class ListOfLegions: UITableViewController {
 
     private var legionList = Legion.getLegionList()
     
@@ -17,7 +17,6 @@ class LegionsList: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         legionList.count
     }
@@ -46,7 +45,7 @@ class LegionsList: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let legionDetailsVC = segue.destination as? TabBarViewController else { return }
+        guard let legionDetailsVC = segue.destination as? TabBarVC else { return }
         legionDetailsVC.legion = sender as? Legion
     }
 

@@ -8,7 +8,7 @@
 struct Legion {
     let name: String
     let number: String
-    let urlPhoto: String?
+    let pictureLink: String?
     let primarch: Primarch
 }
 
@@ -20,7 +20,7 @@ struct Primarch {
 
 struct ChaosGod {
     let discription: String
-    let urlPhoto: String?
+    let pictureLink: String?
 }
 
 extension Legion {
@@ -39,7 +39,7 @@ extension Legion {
             let legion = Legion(
                 name: legionNames[index],
                 number: numbers[index],
-                urlPhoto: urls[index],
+                pictureLink: urls[index],
                 primarch: Primarch.getPrimarchList()[index]
             )
             
@@ -86,7 +86,7 @@ extension ChaosGod {
         for index in 0..<iterationCount {
             let god = ChaosGod(
                 discription: godDiscriptons[index],
-                urlPhoto: urls[index]
+                pictureLink: urls[index]
             )
             
             gods.append(god)
