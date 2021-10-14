@@ -10,7 +10,8 @@ import UIKit
 class ChaosVC: UIViewController {
     
     @IBOutlet weak var godsImageView: UIImageView!
-    @IBOutlet weak var godsDiscriptionLabel: UILabel!
+    @IBOutlet weak var godNamesLabel: UILabel!
+    @IBOutlet weak var godDescriptionTextView: UITextView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -29,13 +30,13 @@ class ChaosVC: UIViewController {
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            reloadData(index: sender.selectedSegmentIndex)
+            loadDataFromFirebase(godName: "Tzeentch")
         case 1:
-            reloadData(index: sender.selectedSegmentIndex)
+            loadDataFromFirebase(godName: "Khorne")
         case 2:
-            reloadData(index: sender.selectedSegmentIndex)
+            loadDataFromFirebase(godName: "Nurgle")
         default:
-            reloadData(index: sender.selectedSegmentIndex)
+            loadDataFromFirebase(godName: "Slaanesh")
         }
     }
     
@@ -43,11 +44,22 @@ class ChaosVC: UIViewController {
         performSegue(withIdentifier: "gallerySegue", sender: nil)
     }
     
+    private func loadDataFromFirebase(godName: String) {
+        APIManager.shared.getPost(collection: "chaos", docName: godName, completion: {doc in
+            guard doc != nil else { return }
+            self.godNamesLabel.text = doc?.names
+            self.godDescriptionTextView.text = doc?.description
+        })
+        APIManager.shared.getImage(picName: godName, completion: { pic in
+            self.godsImageView.image = pic
+        })
+    }
+    
     private func reloadData(index: Int) {
         let god = gods[index]
         
         getPicture(url: god.pictureLink)
-        godsDiscriptionLabel.text = god.discription
+        godNamesLabel.text = god.discription
     }
     
     private func getPicture(url: String!) {

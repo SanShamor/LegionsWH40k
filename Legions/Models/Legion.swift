@@ -23,6 +23,11 @@ struct ChaosGod {
     let pictureLink: String?
 }
 
+struct Chaos {
+    let names: String
+    let description: String
+}
+
 extension Legion {
     static func getLegionList() -> [Legion] {
         

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcq-uS-CkX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcq-uS-CkX">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="legionName" textLabel="ja6-DC-kzp" detailTextLabel="8LL-Td-8Ho" style="IBUITableViewCellStyleSubtitle" id="AYL-h2-09Y">
-                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="44.666667938232422"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="44.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AYL-h2-09Y" id="2ge-4N-swF">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44.666667938232422"/>
@@ -516,43 +516,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzv-Wf-78y">
-                                <rect key="frame" x="15" y="136" width="384" height="726"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="olG-hT-pLn">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="230.33333333333334"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7a4-if-ALp">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="200"/>
-                                                <color key="tintColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="J4c-Zx-rHr"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God's description here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSU-72-JRG">
-                                                <rect key="frame" x="0.0" y="210" width="384" height="20.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7a4-if-ALp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="400"/>
+                                <color key="tintColor" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="olG-hT-pLn" firstAttribute="bottom" secondItem="hMc-Xv-EHx" secondAttribute="bottom" id="CmX-Lx-l5h"/>
-                                    <constraint firstItem="olG-hT-pLn" firstAttribute="width" secondItem="BAr-U7-qzb" secondAttribute="width" id="Vrt-36-GaE"/>
-                                    <constraint firstItem="olG-hT-pLn" firstAttribute="top" secondItem="hMc-Xv-EHx" secondAttribute="top" id="WPP-1b-uDg"/>
-                                    <constraint firstItem="olG-hT-pLn" firstAttribute="leading" secondItem="hMc-Xv-EHx" secondAttribute="leading" id="teN-gq-NV8"/>
-                                    <constraint firstItem="olG-hT-pLn" firstAttribute="trailing" secondItem="hMc-Xv-EHx" secondAttribute="trailing" id="vjG-y3-cAV"/>
+                                    <constraint firstAttribute="height" constant="400" id="J4c-Zx-rHr"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="hMc-Xv-EHx"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="BAr-U7-qzb"/>
-                            </scrollView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-lw-n4A">
+                                <rect key="frame" x="190" y="260" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSU-72-JRG">
+                                <rect key="frame" x="15" y="508" width="384" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="God's description here">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Rockwell-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hnR-ah-HzN">
+                                <rect key="frame" x="15" y="537" width="384" height="325"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="166-8c-MfY">
                                 <rect key="frame" x="16" y="93" width="382" height="36"/>
                                 <color key="backgroundColor" red="0.56541623772106964" green="0.17066229833002458" blue="0.2340699005985386" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -569,23 +568,23 @@
                                     <action selector="choiseGodSegment:" destination="tLu-AG-Cv9" eventType="valueChanged" id="1Dv-IE-PRB"/>
                                 </connections>
                             </segmentedControl>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-lw-n4A">
-                                <rect key="frame" x="188.66666666666666" y="228" width="37" height="37"/>
-                                <color key="color" red="0.56541623770000005" green="0.17066229829999999" blue="0.23406990059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kMt-lX-G0k"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="dTt-lw-n4A" firstAttribute="top" secondItem="166-8c-MfY" secondAttribute="bottom" constant="100" id="0dE-sj-aBZ"/>
+                            <constraint firstItem="hnR-ah-HzN" firstAttribute="bottom" secondItem="kMt-lX-G0k" secondAttribute="bottom" id="00m-42-o7P"/>
+                            <constraint firstItem="7a4-if-ALp" firstAttribute="top" secondItem="kMt-lX-G0k" secondAttribute="top" id="1Hl-ed-6KM"/>
+                            <constraint firstItem="7a4-if-ALp" firstAttribute="leading" secondItem="kMt-lX-G0k" secondAttribute="leading" id="2Ho-kv-xqI"/>
+                            <constraint firstItem="kMt-lX-G0k" firstAttribute="trailing" secondItem="oSU-72-JRG" secondAttribute="trailing" constant="15" id="2TD-uf-t44"/>
+                            <constraint firstItem="oSU-72-JRG" firstAttribute="leading" secondItem="kMt-lX-G0k" secondAttribute="leading" constant="15" id="DEZ-tq-4QB"/>
                             <constraint firstItem="166-8c-MfY" firstAttribute="top" secondItem="g1S-gO-98d" secondAttribute="topMargin" constant="5" id="GTE-RX-OEn"/>
-                            <constraint firstItem="Jzv-Wf-78y" firstAttribute="top" secondItem="166-8c-MfY" secondAttribute="bottom" constant="8" id="ICj-LH-TK4"/>
+                            <constraint firstItem="hnR-ah-HzN" firstAttribute="leading" secondItem="kMt-lX-G0k" secondAttribute="leading" constant="15" id="JaB-rZ-oGl"/>
                             <constraint firstItem="kMt-lX-G0k" firstAttribute="trailing" secondItem="166-8c-MfY" secondAttribute="trailing" constant="16" id="K0b-nh-RO2"/>
-                            <constraint firstItem="Jzv-Wf-78y" firstAttribute="leading" secondItem="kMt-lX-G0k" secondAttribute="leading" constant="15" id="cUZ-vo-VZ7"/>
-                            <constraint firstItem="Jzv-Wf-78y" firstAttribute="bottom" secondItem="kMt-lX-G0k" secondAttribute="bottom" id="lec-Yh-I7b"/>
+                            <constraint firstItem="kMt-lX-G0k" firstAttribute="trailing" secondItem="hnR-ah-HzN" secondAttribute="trailing" constant="15" id="TYq-LP-nVX"/>
+                            <constraint firstItem="kMt-lX-G0k" firstAttribute="trailing" secondItem="7a4-if-ALp" secondAttribute="trailing" id="U9g-xm-MEm"/>
+                            <constraint firstItem="hnR-ah-HzN" firstAttribute="top" secondItem="oSU-72-JRG" secondAttribute="bottom" constant="12" id="ebv-U4-Wje"/>
                             <constraint firstItem="166-8c-MfY" firstAttribute="leading" secondItem="kMt-lX-G0k" secondAttribute="leading" constant="16" id="mjf-9r-AWb"/>
-                            <constraint firstItem="dTt-lw-n4A" firstAttribute="centerX" secondItem="g1S-gO-98d" secondAttribute="centerX" id="oxg-QG-pAH"/>
-                            <constraint firstItem="Jzv-Wf-78y" firstAttribute="trailing" secondItem="kMt-lX-G0k" secondAttribute="trailing" constant="-15" id="ziZ-Ys-a5d"/>
+                            <constraint firstItem="oSU-72-JRG" firstAttribute="top" secondItem="7a4-if-ALp" secondAttribute="bottom" constant="20" id="qWg-v6-1b5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chaos" largeTitleDisplayMode="never" id="kVc-8i-ITY">
@@ -607,7 +606,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="dTt-lw-n4A" id="IrJ-pW-m2W"/>
-                        <outlet property="godsDiscriptionLabel" destination="oSU-72-JRG" id="aoR-lR-6EJ"/>
+                        <outlet property="godDescriptionTextView" destination="hnR-ah-HzN" id="d7s-Wz-sgH"/>
+                        <outlet property="godNamesLabel" destination="oSU-72-JRG" id="aoR-lR-6EJ"/>
                         <outlet property="godsImageView" destination="7a4-if-ALp" id="tmo-jr-EVa"/>
                         <outlet property="segmentedControl" destination="166-8c-MfY" id="be2-qY-rgC"/>
                         <segue destination="qgZ-o7-9gT" kind="show" identifier="gallerySegue" id="ZRV-dK-ong"/>
@@ -615,7 +615,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnJ-e2-Rha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="-311"/>
+            <point key="canvasLocation" x="1192.753623188406" y="-311.38392857142856"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="v4a-B3-Thm">
@@ -686,6 +686,9 @@
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
