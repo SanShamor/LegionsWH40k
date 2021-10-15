@@ -79,24 +79,3 @@ extension Primarch {
         }
     }
 
-extension ChaosGod {
-    static func getGodsList() -> [ChaosGod] {
-        var gods: [ChaosGod] = []
-        
-        let godDiscriptons = DataManager.shared.chaosGods
-        let urls = DataManager.shared.urlsChaos
-        
-        let iterationCount = min(godDiscriptons.count, urls.count)
-        
-        for index in 0..<iterationCount {
-            let god = ChaosGod(
-                discription: godDiscriptons[index],
-                pictureLink: urls[index]
-            )
-            
-            gods.append(god)
-        }
-        
-        return gods
-    }
-}

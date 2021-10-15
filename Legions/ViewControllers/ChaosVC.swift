@@ -14,18 +14,13 @@ class ChaosVC: UIViewController {
     @IBOutlet weak var godDescriptionTextView: UITextView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    private var gods = ChaosGod.getGodsList()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        reloadData(index: 0)
-        activityIndicator.startAnimating()
-        activityIndicator.hidesWhenStopped = true
+        loadDataFromFirebase(godName: "Tzeentch")
     }
-    
-    
+        
     @IBAction func choiseGodSegment(_ sender: UISegmentedControl) {
         
         switch segmentedControl.selectedSegmentIndex {
@@ -45,34 +40,24 @@ class ChaosVC: UIViewController {
     }
     
     private func loadDataFromFirebase(godName: String) {
+        godsImageView.image = UIImage(named: "LogoFinal.jpg")
+        self.activityIndicator.isHidden = false
+        self.activityIndicator.startAnimating()
+        
         APIManager.shared.getPost(collection: "chaos", docName: godName, completion: {doc in
             guard doc != nil else { return }
             self.godNamesLabel.text = doc?.names
             self.godDescriptionTextView.text = doc?.description
         })
-        APIManager.shared.getImage(picName: godName, completion: { pic in
-            self.godsImageView.image = pic
-        })
-    }
-    
-    private func reloadData(index: Int) {
-        let god = gods[index]
-        
-        getPicture(url: god.pictureLink)
-        godNamesLabel.text = god.discription
-    }
-    
-    private func getPicture(url: String!) {
-        guard let url = URL(string: url  ?? "") else { return }
-        
         DispatchQueue.global().async {
-            guard let imageData = try? Data(contentsOf: url) else { return }
-            
-            DispatchQueue.main.async {
-                self.godsImageView.image = UIImage(data: imageData)
-                self.activityIndicator.stopAnimating()
-            }
-            
+            APIManager.shared.getImage(picName: godName, completion: { pic in
+                DispatchQueue.main.async {
+                    self.godsImageView.image = pic
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.isHidden = true
+                }
+            })
         }
     }
+    
 }
