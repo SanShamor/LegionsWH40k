@@ -47,4 +47,26 @@ class APIManager {
         })
     }
     
+    func getPostPrimarch(collection: String, docName: String, completion: @escaping (Primarch?) -> Void) {
+        let db = configureFB()
+        db.collection(collection).document(docName).getDocument(completion: { (document, error) in
+            guard error == nil else { completion(nil); return }
+            let doc = Primarch(name: document?.get("name") as! String, status: document?.get("status") as! String, planet: document?.get("planet") as! String)
+            completion(doc)
+        })
+    }
+    
+    func getImagePrimarch(collectionName: String, picName: String, completion: @escaping (UIImage) -> Void) {
+        let storage = Storage.storage()
+        let reference = storage.reference()
+        let pathRef = reference.child(collectionName)
+        var image: UIImage = UIImage(named: "LogoFinal")!
+        
+        let fileRef = pathRef.child(picName + ".jpg")
+        fileRef.getData(maxSize: 1024*1024, completion: { data, error in
+            guard error == nil else { completion(image); return }
+            image = UIImage(data: data!)!
+            completion(image)
+        })
+    }
 }

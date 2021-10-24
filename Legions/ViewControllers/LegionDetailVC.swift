@@ -8,7 +8,7 @@
 import UIKit
 
 class LegionDetailVC: UIViewController {
-        
+    
     @IBOutlet weak var emblemImageView: UIImageView!
     @IBOutlet weak var armorImageView: UIImageView!
     @IBOutlet weak var primarchLabel: UILabel!
@@ -18,26 +18,35 @@ class LegionDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator.startAnimating()
-        activityIndicator.hidesWhenStopped = true
         
-        emblemImageView.image = UIImage(named: legion.number)
-        getPicture()
-        
-        primarchLabel.text = "Primarch:\n\(legion.primarch.name)"
+        setLAvelAndLogo()
+        loadDataFromFirebase(legion: legion)
     }
     
-    private func getPicture() {
-        guard let url = URL(string: legion.pictureLink ?? "") else { return }
+    private func setLAvelAndLogo() {
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        emblemImageView.image = UIImage(named: legion.number)
+        primarchLabel.text = "Legion:\n\(legion.name)"
+    }
+    
+    private func loadDataFromFirebase(legion: Legion) {
+        armorImageView.image = UIImage(named: "LogoFinal.jpg")
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         
         DispatchQueue.global().async {
-            guard let imageData = try? Data(contentsOf: url) else { return }
-            
-            DispatchQueue.main.async {
-                self.armorImageView.image = UIImage(data: imageData)
-                self.activityIndicator.stopAnimating()
-            }
-            
+            APIManager.shared.getImagePrimarch(
+                collectionName: "legions",
+                picName: legion.number,
+                completion: { pic in
+                    DispatchQueue.main.async {
+                        self.armorImageView.image = pic
+                        self.activityIndicator.stopAnimating()
+                        self.activityIndicator.isHidden = true
+                    }
+                }
+            )
         }
     }
     

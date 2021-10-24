@@ -14,24 +14,24 @@ class ChaosVC: UIViewController {
     @IBOutlet weak var godDescriptionTextView: UITextView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadDataFromFirebase(godName: "Tzeentch")
+        loadDataFromFirebase(collection: "chaos", godName: "Tzeentch")
     }
-        
+    
     @IBAction func choiseGodSegment(_ sender: UISegmentedControl) {
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            loadDataFromFirebase(godName: "Tzeentch")
+            loadDataFromFirebase(collection: "chaos", godName: "Tzeentch")
         case 1:
-            loadDataFromFirebase(godName: "Khorne")
+            loadDataFromFirebase(collection: "chaos", godName: "Khorne")
         case 2:
-            loadDataFromFirebase(godName: "Nurgle")
+            loadDataFromFirebase(collection: "chaos", godName: "Nurgle")
         default:
-            loadDataFromFirebase(godName: "Slaanesh")
+            loadDataFromFirebase(collection: "chaos", godName: "Slaanesh")
         }
     }
     
@@ -39,18 +39,19 @@ class ChaosVC: UIViewController {
         performSegue(withIdentifier: "gallerySegue", sender: nil)
     }
     
-    private func loadDataFromFirebase(godName: String) {
+    private func loadDataFromFirebase(collection: String, godName: String) {
         godsImageView.image = UIImage(named: "LogoFinal.jpg")
-        self.activityIndicator.isHidden = false
-        self.activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         
-        APIManager.shared.getPost(collection: "chaos", docName: godName, completion: {doc in
+        APIManager.shared.getPost(collection: collection, docName: godName, completion: {doc in
             guard doc != nil else { return }
             self.godNamesLabel.text = doc?.names
             self.godDescriptionTextView.text = doc?.description
         })
+        
         DispatchQueue.global().async {
-            APIManager.shared.getImage(picName: godName, completion: { pic in
+            APIManager.shared.getImagePrimarch(collectionName: collection, picName: godName, completion: { pic in
                 DispatchQueue.main.async {
                     self.godsImageView.image = pic
                     self.activityIndicator.stopAnimating()

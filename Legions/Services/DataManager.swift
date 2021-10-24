@@ -28,9 +28,18 @@ class DataManager {
         "XIX", "XX"
     ]
     
+    // MARK: Primarchs' Data
+    let primarchNames = [
+        "Lion_El%27Jonson", "Fulgrim", "Perturabo", "Jaghatai_Khan",
+        "Leman_Russ", "Rogal_Dorn", "Konrad_Curze", "Sanguinius",
+        "Ferrus_Manus", "Angron", "Roboute_Guilliman", "Mortarion",
+        "Magnus_the_Red", "Horus_Lupercal", "Lorgar", "Vulcan",
+        "Corvus_Corax", "Alpharius"
+    ]
+    
     let urlsAstartes = [
         "https://cdnb.artstation.com/p/assets/images/images/006/247/113/large/tobias-gotze-sm.jpg?1497104121", // темныeАнгелы
-        "https://cdnb.artstation.com/p/assets/images/images/037/087/987/large/cristian-alias-low-res-print-a3-helm.jpg?1619457889", //детиИмпиратора
+        "https://cdnb.artstation.com/p/assets/images/images/037/087/987/large/cristian-alias-low-res-print-a3-helm.jpg?1619457889", //детиИмператора
         "https://cdnb.artstation.com/p/assets/images/images/006/877/715/large/igor-sid-18-iron-warrior.jpg?1501924253", //желВоины
         "https://cdna.artstation.com/p/assets/images/images/016/959/634/large/steven-pabalinas-hunter-of-chogris.jpg?1554134219", //белыеШрамы
         "https://cdna.artstation.com/p/assets/images/images/030/575/228/large/wesley-gardner-ragnarblackmane-fanart.jpg?1601006603", //волки
@@ -47,40 +56,6 @@ class DataManager {
         "https://cdna.artstation.com/p/assets/images/images/033/050/512/large/joacim-holm-pyroas.jpg?1608235657", //саламандры
         "https://cdna.artstation.com/p/assets/images/images/001/487/626/large/johan-grenier-ravenguard-web03.jpg?1447273901", //гвардияВорона
         "https://cdna.artstation.com/p/assets/images/images/031/435/084/large/david-sondered-martin-al-web.jpg?1603634022" //альфа
-    ]
-    
-    // MARK: Primarchs' Data
-        let primarchNames = [
-        "Lion El'Jonson", "Fulgrim", "Perturabo", "Jaghatai_Khan",
-        "Leman_Russ", "Rogal_Dorn", "Konrad_Curze", "Sanguinius",
-        "Ferrus_Manus", "Angron", "Roboute_Guilliman", "Mortarion",
-        "Magnus_the_Red", "Horus_Lupercal", "Lorgar", "Vulcan",
-        "Corvus_Corax", "Alpharius"
-    ]
-    
-    let statusPosition = [
-        "Loyal – K.O.", "HERESY\nDemon-Prince of Slaanesh","HERESY – N/A",
-        "Loyal – N/A", "Loyal – Lost Signal", "Loyal – K.O.",
-        "HERESY – <Target_terminated>", "Loyal – K.O.", "Loyal – K.O.",
-        "HERESY\nDemon-Prince of Kchorne", "Loyal – Guard", "HERESY\nDemon-Prince of Nurgle",
-        "HERESY\nDemon-Prince of Tzeentch", "HERESY – <Target_terminated>", "HERESY – N/A",
-        "Loyal – Lost Signal", "Loyal – N/A", "HERESY – <Target_terminated>?"
-    ]
-    
-    let planetList = [
-        "Kaliban\n<Destroyed>", "Kemos\n<Exterminatus_Confirmed>", "Olimpia\n<Exterminatus_Confirmed>",
-        "Chogoris", "Fenris", "Inwit", "Nostramo\n<Exterminatus_Confirmed>",
-        "Gaal", "Medusa", "Nuceria\n<Destroyed>",
-        "Macragge\nUltramar - Segmentum Ultima", "Barbarus\n<Exterminatus_Confirmed>", "Prosperro\n<Destroyed>",
-        "Chthonia\n<Exterminatus_Confirmed>", "Monarchy\n<Exterminatus_Confirmed>", "Nocturne",
-        "Lucaes", "<No_Information>"
-    ]
-    
-    let urlsChaos = [
-        "https://cdna.artstation.com/p/assets/images/images/027/130/892/large/klaher-baklaher-tzeench.jpg?1590677922", // Тзинч
-        "https://cdna.artstation.com/p/assets/images/images/027/130/922/large/klaher-baklaher-khorn.jpg?1590677976", //Кхорн
-        "https://cdna.artstation.com/p/assets/images/images/027/130/888/large/klaher-baklaher-nurgle.jpg?1590677913", //Нургл
-        "https://cdna.artstation.com/p/assets/images/images/027/130/890/large/klaher-baklaher-slanesh.jpg?1590677918", //Слаанеш
     ]
     
     private init() {}

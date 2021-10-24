@@ -8,19 +8,20 @@
 import UIKit
 
 class ListOfLegions: UITableViewController {
-
-    private var legionList = Legion.getLegionList()
+    
+    //private var legionList = Legion.getLegionList()
+    private var legionList = Legion.getLegionListDemo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
     }
-
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         legionList.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "legionName", for: indexPath)
         let legion = legionList[indexPath.row]
@@ -30,7 +31,7 @@ class ListOfLegions: UITableViewController {
         content.secondaryText = legion.number
         content.image = UIImage(named: legion.number)
         content.imageProperties.cornerRadius = tableView.rowHeight / 3
-
+        
         cell.contentConfiguration = content
         
         return cell
@@ -46,8 +47,9 @@ class ListOfLegions: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let legionDetailsVC = segue.destination as? TabBarVC else { return }
+        //legionDetailsVC.legion = sender as? Legion
         legionDetailsVC.legion = sender as? Legion
     }
-
+    
 }
 

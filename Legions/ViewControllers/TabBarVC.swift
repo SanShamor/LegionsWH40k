@@ -15,12 +15,13 @@ class TabBarVC: UITabBarController {
         super.viewDidLoad()
         setupViewControllers(with: legion)
     }
+    
     private func setupViewControllers(with legion: Legion) {
         let legionDetailVC = viewControllers?.first as! LegionDetailVC
         let primarchDetailVC = viewControllers?.last as! PrimarchDetailVC
         
         legionDetailVC.legion = legion
-        primarchDetailVC.primarch = legion.primarch
+        primarchDetailVC.legion = legion
     }
    
     @IBAction func galleryBarButtonPressed(_ sender: UIButton) {

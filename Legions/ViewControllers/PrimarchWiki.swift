@@ -10,7 +10,7 @@ import WebKit
 
 class PrimarchWiki: UIViewController {
     
-    var primarchData: Primarch!
+    var legion: Legion!
     
     @IBOutlet weak var webView: WKWebView!
     
@@ -20,10 +20,8 @@ class PrimarchWiki: UIViewController {
     }
     
     private func doRequestToWiki(){
-        var link = "https://warhammer40k.fandom.com/wiki/\(primarchData.name)"
-        if primarchData.name == "Lion El'Jonson" {
-            link = "https://warhammer40k.fandom.com/wiki/Lion_El%27Jonson"
-        }
+        let link = "https://warhammer40k.fandom.com/wiki/\(legion.primarch)"
+        
         guard let url = URL(string: link) else { return }
         let request = URLRequest(url: url)
         

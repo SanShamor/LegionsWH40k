@@ -332,6 +332,11 @@
                                     <action selector="moreButtonPressed:" destination="h3f-5B-zlW" eventType="touchUpInside" id="VlP-Je-xIH"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2eN-PI-zVw">
+                                <rect key="frame" x="197" y="408" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemYellowColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MXS-Du-jzr"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -354,6 +359,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Primarch" image="person.crop.square" catalog="system" id="6ic-Ow-ZEE"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="2eN-PI-zVw" id="oQu-XP-uML"/>
                         <outlet property="planetLabel" destination="Ipl-0a-09y" id="sNB-8Q-KI3"/>
                         <outlet property="primarchImage" destination="qG7-gD-bQR" id="vcc-Fz-93z"/>
                         <outlet property="primarchNameLabel" destination="DR1-kU-EXl" id="FF0-ex-NTf"/>
@@ -364,7 +370,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZQ-2X-zfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="h3f-5B-zlW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1629" y="1123"/>
+            <point key="canvasLocation" x="1628.985507246377" y="1122.9910714285713"/>
         </scene>
         <!--Primarch Wiki-->
         <scene sceneID="KRV-a1-jNT">
@@ -680,7 +686,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZRV-dK-ong"/>
+        <segue reference="otp-Y4-Xhn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
@@ -700,6 +706,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
