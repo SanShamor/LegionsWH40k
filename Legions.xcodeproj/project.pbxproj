@@ -28,12 +28,11 @@
 		367CFF5F2661204A005F731D /* MenuScreenCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF5E2661204A005F731D /* MenuScreenCV.swift */; };
 		367CFF6126612067005F731D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6026612067005F731D /* MenuCell.swift */; };
 		367CFF6326615A6A005F731D /* ChaosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6226615A6A005F731D /* ChaosVC.swift */; };
-		5697FBB74102C790BCA78FC9 /* Pods_Legions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E4785DC6FBDA01F1C2517E /* Pods_Legions.framework */; };
+		EF826C1D6991152D7F031868 /* Pods_Legions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24C379A8F7E3BB6DE9A633 /* Pods_Legions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10E4785DC6FBDA01F1C2517E /* Pods_Legions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Legions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		33157B9ABAAF2B6EEB83EEEE /* Pods-Legions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legions.release.xcconfig"; path = "Target Support Files/Pods-Legions/Pods-Legions.release.xcconfig"; sourceTree = "<group>"; };
+		11D0E219F288925F26717C9E /* Pods-Legions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legions.release.xcconfig"; path = "Target Support Files/Pods-Legions/Pods-Legions.release.xcconfig"; sourceTree = "<group>"; };
 		36120C472666383F00E45AFA /* PictureDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDetailVC.swift; sourceTree = "<group>"; };
 		363AB378265B90AF008EB666 /* Legions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AB37B265B90AF008EB666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +56,8 @@
 		367CFF5E2661204A005F731D /* MenuScreenCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenCV.swift; sourceTree = "<group>"; };
 		367CFF6026612067005F731D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		367CFF6226615A6A005F731D /* ChaosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosVC.swift; sourceTree = "<group>"; };
-		3EFBB28ED6BE31F55E3BDB83 /* Pods-Legions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legions.debug.xcconfig"; path = "Target Support Files/Pods-Legions/Pods-Legions.debug.xcconfig"; sourceTree = "<group>"; };
+		70646FF5897F676B01A29FD4 /* Pods-Legions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legions.debug.xcconfig"; path = "Target Support Files/Pods-Legions/Pods-Legions.debug.xcconfig"; sourceTree = "<group>"; };
+		FD24C379A8F7E3BB6DE9A633 /* Pods_Legions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Legions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5697FBB74102C790BCA78FC9 /* Pods_Legions.framework in Frameworks */,
+				EF826C1D6991152D7F031868 /* Pods_Legions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		258813B038672C967E9981AE /* Frameworks */ = {
+		354F90CB406AF3EBB8EF72C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10E4785DC6FBDA01F1C2517E /* Pods_Legions.framework */,
+				FD24C379A8F7E3BB6DE9A633 /* Pods_Legions.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 				363AB37A265B90AF008EB666 /* Legions */,
 				363AB379265B90AF008EB666 /* Products */,
 				7C7B5442A3E2252D9EA1D786 /* Pods */,
-				258813B038672C967E9981AE /* Frameworks */,
+				354F90CB406AF3EBB8EF72C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,8 +178,8 @@
 		7C7B5442A3E2252D9EA1D786 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3EFBB28ED6BE31F55E3BDB83 /* Pods-Legions.debug.xcconfig */,
-				33157B9ABAAF2B6EEB83EEEE /* Pods-Legions.release.xcconfig */,
+				70646FF5897F676B01A29FD4 /* Pods-Legions.debug.xcconfig */,
+				11D0E219F288925F26717C9E /* Pods-Legions.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -191,11 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 363AB38C265B90B1008EB666 /* Build configuration list for PBXNativeTarget "Legions" */;
 			buildPhases = (
-				E2C3B780DC763080A31D7F0B /* [CP] Check Pods Manifest.lock */,
+				4225453F5C8916FE1704A64C /* [CP] Check Pods Manifest.lock */,
 				363AB374265B90AF008EB666 /* Sources */,
 				363AB375265B90AF008EB666 /* Frameworks */,
 				363AB376265B90AF008EB666 /* Resources */,
-				C378BEA566289B6E8A04543B /* [CP] Embed Pods Frameworks */,
+				2DF2B0B0EBB1F137E38AA161 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,7 +253,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C378BEA566289B6E8A04543B /* [CP] Embed Pods Frameworks */ = {
+		2DF2B0B0EBB1F137E38AA161 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,7 +270,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Legions/Pods-Legions-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2C3B780DC763080A31D7F0B /* [CP] Check Pods Manifest.lock */ = {
+		4225453F5C8916FE1704A64C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,11 +459,12 @@
 		};
 		363AB38D265B90B1008EB666 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EFBB28ED6BE31F55E3BDB83 /* Pods-Legions.debug.xcconfig */;
+			baseConfigurationReference = 70646FF5897F676B01A29FD4 /* Pods-Legions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G6Q84AD3R;
 				INFOPLIST_FILE = Legions/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,11 +480,12 @@
 		};
 		363AB38E265B90B1008EB666 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33157B9ABAAF2B6EEB83EEEE /* Pods-Legions.release.xcconfig */;
+			baseConfigurationReference = 11D0E219F288925F26717C9E /* Pods-Legions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G6Q84AD3R;
 				INFOPLIST_FILE = Legions/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -41,9 +41,9 @@ class PrimarchDetailVC: UIViewController {
         
         APIManager.shared.getPostPrimarch(collection: "primarch", docName: primarch, completion: {doc in
             guard doc != nil else { return }
-            self.primarchNameLabel.text = doc?.name
-            self.statusLabel.text = doc?.status
-            self.planetLabel.text = doc?.planet
+            self.primarchNameLabel.text = "\(doc?.name ?? "N/A")"
+            self.statusLabel.text = "Status- \(doc?.status ?? "N/A")"
+            self.planetLabel.text = "Planet- \(doc?.planet ?? "N/A")"
         })
         
         DispatchQueue.global().async {

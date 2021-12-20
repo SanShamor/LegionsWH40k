@@ -13,14 +13,20 @@ class LegionDetailVC: UIViewController {
     @IBOutlet weak var armorImageView: UIImageView!
     @IBOutlet weak var primarchLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var legion: Legion!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpScrollView()
         setLAvelAndLogo()
         loadDataFromFirebase(legion: legion)
+    }
+    
+    private func setUpScrollView() {
+        scrollView.delegate = self
     }
     
     private func setLAvelAndLogo() {
@@ -50,4 +56,11 @@ class LegionDetailVC: UIViewController {
         }
     }
     
+}
+
+extension LegionDetailVC: UIScrollViewDelegate {
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return armorImageView
+    }
 }
