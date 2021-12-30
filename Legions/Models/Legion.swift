@@ -24,7 +24,7 @@ struct Chaos {
 }
 
 extension Legion {
-    static func getLegionListDemo() -> [Legion] {
+    static func getLegionList() -> [Legion] {
         
         var legions: [Legion] = []
         

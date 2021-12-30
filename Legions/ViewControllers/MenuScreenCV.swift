@@ -11,7 +11,7 @@ enum UserActions: String, CaseIterable {
     case astartes = "Legiones Astartes"
     case mechanicus = "Adeptus Mechanicus"
     case chaos = "Chaos"
-    case exampleThree = "Test"
+    case exampleThree = "TestCell (Not working)"
 }
 
 class MenuScreenCV: UICollectionViewController {
@@ -25,9 +25,10 @@ class MenuScreenCV: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenuCell
+        cell.configureTheme()
         cell.userActionLabel.text = userActions[indexPath.item].rawValue
-        return cell
         
+        return cell
     }
     
     // MARK: UICollectionViewDelegate
@@ -42,7 +43,7 @@ class MenuScreenCV: UICollectionViewController {
         case .chaos:
             performSegue(withIdentifier: "chaosSegue", sender: nil)
         case .exampleThree:
-            performSegue(withIdentifier: "redVC", sender: nil)
+            print("OK, but it isn't ready. In progress...")
         }
         
     }

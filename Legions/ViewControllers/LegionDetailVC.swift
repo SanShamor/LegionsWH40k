@@ -21,7 +21,7 @@ class LegionDetailVC: UIViewController {
         super.viewDidLoad()
         
         setUpScrollView()
-        setLAvelAndLogo()
+        setLabelAndLogo()
         loadDataFromFirebase(legion: legion)
     }
     
@@ -29,7 +29,7 @@ class LegionDetailVC: UIViewController {
         scrollView.delegate = self
     }
     
-    private func setLAvelAndLogo() {
+    private func setLabelAndLogo() {
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         emblemImageView.image = UIImage(named: legion.number)

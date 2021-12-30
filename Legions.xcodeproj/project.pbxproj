@@ -28,6 +28,8 @@
 		367CFF5F2661204A005F731D /* MenuScreenCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF5E2661204A005F731D /* MenuScreenCV.swift */; };
 		367CFF6126612067005F731D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6026612067005F731D /* MenuCell.swift */; };
 		367CFF6326615A6A005F731D /* ChaosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367CFF6226615A6A005F731D /* ChaosVC.swift */; };
+		36E96EC7277A666400EAB8A0 /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 36E96EC6277A666400EAB8A0 /* logo.jpeg */; };
+		36E96EC9277A685200EAB8A0 /* LegionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E96EC8277A685200EAB8A0 /* LegionsCell.swift */; };
 		EF826C1D6991152D7F031868 /* Pods_Legions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24C379A8F7E3BB6DE9A633 /* Pods_Legions.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		367CFF5E2661204A005F731D /* MenuScreenCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenCV.swift; sourceTree = "<group>"; };
 		367CFF6026612067005F731D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		367CFF6226615A6A005F731D /* ChaosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosVC.swift; sourceTree = "<group>"; };
+		36E96EC6277A666400EAB8A0 /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpeg; path = ../../../../logo.jpeg; sourceTree = "<group>"; };
+		36E96EC8277A685200EAB8A0 /* LegionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegionsCell.swift; sourceTree = "<group>"; };
 		70646FF5897F676B01A29FD4 /* Pods-Legions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legions.debug.xcconfig"; path = "Target Support Files/Pods-Legions/Pods-Legions.debug.xcconfig"; sourceTree = "<group>"; };
 		FD24C379A8F7E3BB6DE9A633 /* Pods_Legions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Legions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +107,7 @@
 			children = (
 				364A1DCE268339AA000EA704 /* Models */,
 				364A1DD1268339E8000EA704 /* ViewControllers */,
+				368ED24B277DB5CD00A4E812 /* Views */,
 				364A1DD0268339CB000EA704 /* Services */,
 				364A1DCF268339B5000EA704 /* StoryBoards */,
 				364A1DD326833AE3000EA704 /* Resources */,
@@ -141,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				367CFF5E2661204A005F731D /* MenuScreenCV.swift */,
-				367CFF6026612067005F731D /* MenuCell.swift */,
 				3664A0CD266E010400DBE249 /* MechanicusVC.swift */,
 				367CFF6226615A6A005F731D /* ChaosVC.swift */,
 				363AB38F265B9185008EB666 /* ListOfLegions.swift */,
@@ -150,7 +154,6 @@
 				363AB397265BC303008EB666 /* PrimarchDetailVC.swift */,
 				3664A0CF266E047100DBE249 /* PrimarchWiki.swift */,
 				36543F6F2664E2BF00DB78AD /* GalleryCV.swift */,
-				36543F712664E98700DB78AD /* GalleryCell.swift */,
 				36120C472666383F00E45AFA /* PictureDetailVC.swift */,
 			);
 			path = ViewControllers;
@@ -162,6 +165,7 @@
 				363AB37B265B90AF008EB666 /* AppDelegate.swift */,
 				363AB37D265B90AF008EB666 /* SceneDelegate.swift */,
 				363AB389265B90B1008EB666 /* Info.plist */,
+				36E96EC6277A666400EAB8A0 /* logo.jpeg */,
 				365CFE4C27189392004A5C2E /* GoogleService-Info.plist */,
 			);
 			path = App;
@@ -173,6 +177,16 @@
 				363AB384265B90B1008EB666 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		368ED24B277DB5CD00A4E812 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				367CFF6026612067005F731D /* MenuCell.swift */,
+				36E96EC8277A685200EAB8A0 /* LegionsCell.swift */,
+				36543F712664E98700DB78AD /* GalleryCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7C7B5442A3E2252D9EA1D786 /* Pods */ = {
@@ -243,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E96EC7277A666400EAB8A0 /* logo.jpeg in Resources */,
 				363AB388265B90B1008EB666 /* LaunchScreen.storyboard in Resources */,
 				365CFE4D27189392004A5C2E /* GoogleService-Info.plist in Resources */,
 				363AB385265B90B1008EB666 /* Assets.xcassets in Resources */,
@@ -304,6 +319,7 @@
 				363AB39A265BC9D2008EB666 /* TabBarVC.swift in Sources */,
 				363AB394265BA22D008EB666 /* LegionDetailVC.swift in Sources */,
 				36543F722664E98700DB78AD /* GalleryCell.swift in Sources */,
+				36E96EC9277A685200EAB8A0 /* LegionsCell.swift in Sources */,
 				363AB396265BB14D008EB666 /* DataManager.swift in Sources */,
 				367CFF6126612067005F731D /* MenuCell.swift in Sources */,
 				363AB37C265B90AF008EB666 /* AppDelegate.swift in Sources */,

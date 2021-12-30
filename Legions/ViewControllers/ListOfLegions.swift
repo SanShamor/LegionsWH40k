@@ -9,12 +9,11 @@ import UIKit
 
 class ListOfLegions: UITableViewController {
     
-    //private var legionList = Legion.getLegionList()
-    private var legionList = Legion.getLegionListDemo()
+    private var legionList = Legion.getLegionList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 80
+        tableView.rowHeight = 90
     }
     
     // MARK: - Table view data source
@@ -23,17 +22,10 @@ class ListOfLegions: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "legionName", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LegionsCell", for: indexPath) as! LegionsCell
         let legion = legionList[indexPath.row]
         
-        var content = cell.defaultContentConfiguration()
-        content.text = legion.name
-        content.secondaryText = legion.number
-        content.image = UIImage(named: legion.number)
-        content.imageProperties.cornerRadius = tableView.rowHeight / 3
-        
-        cell.contentConfiguration = content
-        
+        cell.configureCell(legion: legion)
         return cell
     }
     
